@@ -43,10 +43,12 @@ class _TodosScreenState extends State<TodosScreen> {
           },
           child: ListTile(
             leading: const Icon(Icons.notes_sharp),
-            title: Text(item.title,style: const TextStyle(fontWeight: FontWeight.w500)),
+            title: Text(item.title,
+                style: const TextStyle(fontWeight: FontWeight.w500)),
             trailing: Text(
                 '${item.dateFormat.toString()}, ${item.timeFormat.toString()}'),
-            subtitle: Text(item.comment,maxLines: 3, overflow:TextOverflow.ellipsis ),
+            subtitle: Text(item.comment,
+                maxLines: 3, overflow: TextOverflow.ellipsis),
           ),
         );
       };
